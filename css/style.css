@@ -1,0 +1,5036 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    font-size: 20px;
+    font-family:Montserrat-Regular;
+}
+@font-face {
+    font-family:Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.otf);
+}
+@font-face {
+    font-family:Montserrat-Medium;
+    src: url(../fonts/Montserrat-Medium.otf);
+}
+@font-face {
+    font-family:Montserrat-SemiBold;
+    src: url(../fonts/Montserrat-SemiBold.otf);
+}
+@font-face {
+    font-family:Montserrat-Bold;
+    src: url(../fonts/Montserrat-Bold.otf);
+}
+.montserratMedium{
+    font-family:Montserrat-Medium;
+}
+.montserratBold{
+    font-family:Montserrat-Bold;
+
+}
+textarea {
+    resize: none;
+  }
+.hideFeature {
+    margin-top:-20px;
+}
+.showFeature .m4{
+    height: 240px;
+    overflow: auto;
+}
+.lifeSec{
+    background: url('../images/lifeBG.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fulImgSec {
+    background-color: #0e5498;
+    padding: 50px 250px;
+    background:url('../images/mindBg.png');
+    background-repeat: no-repeat !important;
+    /* background-position: top; */
+}
+.homeBnrContent img {
+    margin-top: -150px;
+}
+.beflexH2 {
+    margin-top: 11%;
+    margin-bottom: -1%;
+}
+.montserratSemibold{
+    font-family:Montserrat-SemiBold;
+}
+
+.visitNumber{
+    font-size:40px;
+}
+.handledNumber{
+    font-size:40px;
+}
+.hourNumber{
+    font-size:40px;
+}
+
+.visitText{
+    font-size:25px;
+    margin-top:-50px;
+}
+.handledText{
+    font-size:25px;
+    margin-top:-50px;
+}
+
+.visitCircle {
+    margin-top:-180px;
+    margin-bottom: 70px;
+}
+.handledCircle {
+    margin-top:-180px;
+    margin-bottom: 70px;
+}
+.outbandUl{
+    margin-top:-50px;
+}
+.hourCircle {
+    margin-top: -150px;
+    margin-bottom: 70px;
+}
+
+.hourCircle {
+    margin-top: -150px;
+    margin-bottom: 70px;
+}
+.footerTop img{
+    width:80%;
+}
+.footerTop p{
+    font-size: 14px;
+    margin-right:20%;
+}
+.weAlso {
+    font-size: 30px;
+    color:white;
+}
+.lifeSec img{
+    width: 60%;
+    height: auto;
+}
+.goBigPara{
+    font-size: 24px;
+    line-height: 33px;
+    margin-top: 30px;
+    margin-bottom: -20px;
+}
+.featureSec {
+    padding: 10px 200px;
+    background: #146cab;
+}
+.featureSec h1{
+    font-size:50px;
+    margin-bottom: 30px;
+    color:#3db9ea;
+}
+.pricingSec h1{
+    font-size:50px;
+    margin-top: 100px;
+}
+.featuHigh{
+    padding:10px 50px;
+    border-radius: 10px;
+}
+.featureBtn,
+.featureBtn:hover{
+    font-family: Montserrat-SemiBold;
+    font-size: 22px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 7px;
+    background: #2cb8ff;
+    padding: 0 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.pricingSec {
+    padding:0 200px;
+}
+.pricingPara {
+    margin-top: 40px;
+}
+.pricingSec h3{
+    font-size:30px;
+    margin-bottom: -5px;
+}
+.featureSec h3{
+    font-size:30px;
+}
+.pricingSec ul p{
+    font-size:16px;
+
+}
+.pricingLeft{
+    padding:0 120px !important;
+}
+.pricingRight{
+    padding:0 120px !important;
+}
+.goBig{
+    font-size: 50px;
+    margin-top: 30px;
+    color: #15a1d9;
+}
+.lifeCycle{
+    margin-top:50px;
+    font-size: 40px;
+}
+/* .listPricing {
+    list-style-image: url('../images/outboundMng.png');
+    margin-top:30px;
+} */
+.invenPricing {
+    position: relative;
+    padding-left: 50px;
+}
+.invenPricing:before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-image: url(../images/inventory.png);
+    background-size: cover;
+    background-position: center;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.outbPricing {
+    position: relative;
+    padding-left: 50px;
+}
+.outbPricing:before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-image: url(../images/outbound.png);
+    background-size: cover;
+    background-position: center;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.inboPricing {
+    position: relative;
+    padding-left: 50px;
+}
+.inboPricing:before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-image: url(../images/inbound.png);
+    background-size: cover;
+    background-position: center;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.rtrnPricing {
+    position: relative;
+    padding-left: 50px;
+}
+.rtrnPricing:before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-image: url(../images/replacement.png);
+    background-size: cover;
+    background-position: center;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.tecPricing {
+    position: relative;
+    padding-left: 50px;
+}
+.tecPricing:before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-image: url(../images/technical-support.png);
+    background-size: cover;
+    background-position: center;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.aboutSec{
+    padding:0 200px;
+}
+.contUl{
+    margin-left:10%;
+}
+.phoneCon {
+    position: relative;
+    padding-left: 20px;
+    margin-top:40px;
+    font-size:17px;
+}
+.phoneCon:before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-image: url(../images/phone.png);
+    background-size: cover;
+    background-position: center;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.addCon {
+    position: relative;
+    padding-left: 20px;
+    margin-top:40px;
+    font-size:17px;
+}
+.addCon:before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-image: url(../images/map.png);
+    background-size: cover;
+    background-position: center;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.mailCon {
+    position: relative;
+    padding-left:20px;
+    margin-top:40px;
+    font-size:17px;
+}
+.mailCon:before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-image: url(../images/www.png);
+    background-size: cover;
+    background-position: center;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.text-justify{
+    text-align:justify;
+}
+.aboutBanner img{
+    margin-top: -100px;
+}
+header nav ul a,
+header nav ul a:hover {
+border-radius: 10px;
+}
+.fixedWhatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+.homeBnrContent {
+    padding: 10px 50px 20px 200px;
+    color: white;
+    background-image: url(../images/cloudBanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -64px;
+}
+.aboutSec h1{
+    font-size:50px;
+}
+.bnrContact h4 {
+    margin-top: 15%;
+}
+.visionSec {
+    padding: 0 300px 50px 300px;
+}
+.visionImg{
+    width:70%;
+    margin-top:10%;
+}
+.visionSec h3{
+    font-size: 30px;
+}
+.homeBnrContent p{
+    font-size:25px;
+}
+.fulfilSec{
+    padding:0px 200px 0px 200px;
+
+    color:white;
+    z-index: 1;
+    position: relative;
+}
+.fulfilSec h2+p{
+    font-size: 25px;
+}
+
+.fulImgSec img{
+    z-index: 0;
+}
+.bnrHome{
+    z-index:0;
+
+}
+.clientSec p{
+    font-size: 23px;
+}
+.clVisit{
+    padding:70px 200px 0px 200px;
+}
+
+.clientSec img {
+    height: auto;
+    width: 75%;
+}
+.rockManSec{
+    position:relative;
+    z-index:1;
+}
+.animateCircle {
+    animation-name: animateCircle;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+@keyframes animateCircle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+.rockManSec{
+    padding-right:80px;
+}
+.rockManSec img {
+    margin-top: -120px;
+    width: 40%;
+}
+header nav{
+    padding:0 100px;
+}
+.bnrHome img {
+    margin-top: -110px;
+}
+nav {
+    color: #fff;
+    background-color: transparent;
+}
+.hide-on-med-and-down{
+    margin-top:30px;
+}
+.homeBnrContent a,
+.homeBnrContent a:hover,
+.homeBnrContent a:active,
+.homeBnrContent a:focus,
+.homeBnrContent a:visited{
+    font-family:Montserrat-Bold;
+    font-size: 25px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 10px;
+    background:#2cb8ff;
+    padding:0 50px;
+    margin-top:20px;
+}
+/* .beflexH2{
+    margin-bottom:-40px;
+} */
+.brand-logo{
+margin-top:30px;
+}
+.lifeSec{
+    /* position:relative;
+    z-index:1;
+    background-color: #5dabce;
+    height: auto;
+    padding: 10px 0; */
+    background: url(../images/parvez.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lifeSec .entrepreneur{
+    margin-top: -15px;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.flexSec h3+p{
+    font-size:20px;
+}
+.flexSec{
+    padding:50px 0 20px 0;
+    background-image: url('../images/goMap.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.flexSec img{
+    width: 40%;
+}
+.flexSec h3 {
+    font-size: 38px;
+    margin-top: 5%;
+}
+.flexSec .col{
+    padding:0;
+}
+.visionSec p {
+    font-size: 18px;
+    line-height: 35px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+.visionSec ol {
+    font-size: 18px;
+    line-height: 35px;
+    margin-left: -20px;
+}
+
+
+.clientBgSec .col{
+    padding: 0;
+}
+.clientBgSec img{
+    margin:0;
+    width:100%;
+
+}
+.fulImgSec img{
+    margin-top:0;
+}
+.weProvideH3{
+    margin-bottom:70px;
+    margin-top: 100px;
+}
+.clVisit h5{
+    font-size: 25px;
+    line-height: 35px;
+    color:#403f3f;
+}
+.mapHow {
+    margin-top:0;
+    margin-bottom:-20px;
+}
+.clientSec .goFlex{
+    margin-top:0px;
+    margin-bottom: 0;
+    font-size: 80px;
+}
+.text-blue{
+    color:#3db9ea;
+}
+
+.clientSec{
+background-image: url('../images/flexibleBg3.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+padding: 50px;
+}
+.servingSec{
+    padding:0 200px;
+    width:100%;
+}
+.servingSec h2{
+    margin-bottom:50px;
+}
+
+.servingSec .card{
+    padding:30px;
+}
+.servingSec .card p{
+    font-size:15px;
+}
+
+.servingSec .owl-nav {
+    margin-top: -10%;
+    position: absolute;
+}
+.servingSec .owl-nav button  {
+    background: #3db9ea !important;
+    width: 40px;
+    height: 40px;
+    line-height: normal !important;
+    border-radius: 5px;
+    color: lightgrey !important;
+    font-size: 30px !important;
+}
+.servingSec .owl-nav .owl-prev {
+    left: -70px;
+    position: absolute;
+}
+.servingSec .owl-nav .owl-next {
+    left: 1490px;
+    position: absolute;
+}
+footer{
+    background:#16a0d9 !important;
+}
+.socialIcons a{
+    color: white;
+    font-size: 31px;
+    margin: 0 5px;
+}
+
+.moveTop {
+    height: 60px;
+    width: 60px;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid rgb(243, 243, 243);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: -55px;
+    left: 48%;
+    position: absolute;
+}
+.moveTop .fa-chevron-up{
+    font-size: 25px;
+    margin-top:10px;
+}
+footer .footerTop{
+    padding: 50px 0 20px 0;
+}
+
+.goFlexP {
+    margin-bottom: -20px;
+}
+.footer-copyright{
+    font-size:15px;
+}
+.footerTop ul{
+    font-size:16px;
+}
+.footerTop h6{
+    margin-bottom:20px;
+}
+.fulImgSec .brainHdng{
+    font-size:50px;
+    margin-top: 30px;
+}
+.fulImgSec .brainSubHdng{
+    font-size:40px;
+    margin-top: 30px;
+}
+.text-back-shadow{
+    text-shadow:1px 1px 1px black;
+}
+.footerTop ul li {
+    margin-bottom:10px;
+}
+.bnrContact{
+    background: url('../images/contactBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -70px;
+    padding-top:200px;
+    padding-bottom:50px;
+    padding-left:0;
+    padding-right:0;
+}
+
+.getquotePara {
+    margin: 40px 150px 50px 0;
+}
+.bnrContact .s7 p{
+    margin-top:0px;
+    font-size: 17px;
+}
+
+.contactForm .form-control {
+    margin-top:10px;
+    display: block;
+    width: 100%;
+    padding: 0.3rem 0.75rem;
+    font-size: 16px;
+    font-weight: 400;
+    height: 60px;
+    line-height:60px;
+    outline: none;
+    color: black;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #b9b6b6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.contactForm .form-select {
+    margin-top:10px;
+    display: block;
+    width: 100%;
+    padding: 0.3rem 0.75rem;
+    font-size: 16px;
+    font-weight: 400;
+    height: 140px;
+    line-height: 140px;
+    outline: none;
+    color: black;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #b9b6b6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    overflow:hidden;
+}
+.contactForm button {
+    background: #1b5197;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 30px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.bnrContact .card {
+    padding: 40px 40px 20px 40px;
+    border-radius: 10px;
+}
+.text-capitalize{
+    text-transform: capitalize;
+}
+.contactForm label{
+    font-size:14px;
+}
+@media screen and (max-width:300px){
+    .hourCircle {
+        margin-top: -170px;
+        margin-bottom: 40px;
+    }
+
+    .aboutBanner img {
+        margin-top: -60px;
+    }
+
+
+
+    html,body{
+        font-size: 8px;
+    }
+.featureSec p{
+    font-size: 8px;
+}
+    .featuHigh {
+        padding: 5px 20px;
+        border-radius: 5px;
+    }
+    .goBig {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .fulImgSec .brainSubHdng {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .clientSec {
+        padding: 10px;
+    }
+
+
+    .homeBnrContent img {
+        margin-top: -30px;
+        width: 30%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .fulImgSec {
+        padding:5px;
+    }
+
+
+    .tecPricing:before {
+        width: 50px;
+        height: 50px;
+        left: -30px;
+    }
+    .invenPricing:before {
+        width: 50px;
+        height: 50px;
+        left: -30px;
+    }
+    .inboPricing:before {
+        width: 50px;
+        height: 50px;
+        left: -30px;
+    }
+    .rtrnPricing:before {
+        width: 50px;
+        height: 50px;
+        left: -30px;
+    }
+    .outbPricing:before{
+        width: 50px;
+        height: 50px;
+        left: -30px;
+    }
+
+
+    .pricingLeft {
+        padding: 0 20px !important;
+    }
+    .pricingRight {
+        padding: 0 20px !important;
+    }
+    .pricingSec {
+        padding: 0 20px;
+    }
+
+    .pricingSec ul p {
+        font-size: 8px;
+    }
+
+    .pricingSec h3 {
+        font-size: 12px;
+        margin-bottom: -10px;
+    }
+
+
+    .featureSec h3 {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .weAlso {
+        line-height: 20px;
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+.fulImgSec .brainHdng {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+    .featuHigh {
+        font-size: 6px;
+    }
+    .pricingSec h1 {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .featureSec h1 {
+        font-size: 12px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .featureBtn, .featureBtn:hover {
+        font-size: 8px;
+        height: 20px;
+        line-height: 20px;
+        border-radius: 4px;
+        padding: 0 15px;
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+
+
+
+
+    .featureSec {
+        padding: 10px 10px;
+        margin-top: 0;
+    }
+    .featureSec .m4 {
+        height: auto;
+    }
+
+
+    .clientBgSec img {
+        margin-top: -40px;
+    }
+
+    .goBigPara {
+        font-size: 8px;
+        line-height: 11px;
+        margin-top: 0px;
+        margin-bottom: -6px;
+    }
+
+    .pricingPara {
+        margin-top: -10px;
+        font-size: 8px;
+    }
+    .visionSec ol {
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+
+    .visionSec h3 {
+        font-size: 12px;
+    }
+    .visionSec p {
+        font-size: 8px;
+        line-height: 12px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .aboutSec {
+        padding: 0 20px;
+    }
+
+
+    .aboutSec h1 {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: -5px;
+    }
+
+    .visionImg {
+        width: 50%;
+        margin-top: 0%;
+    }
+
+    .visionSec {
+        padding:0 20px 0px 20px;
+    }
+
+
+
+
+    .visitNumber{
+        font-size: 12px;
+        margin-top: 120px;
+        margin-bottom: 37px;
+    }
+    .handledNumber{
+        font-size: 12px;
+        margin-top: 120px;
+        margin-bottom: 37px;
+    }
+    .hourNumber{
+        font-size: 12px;
+        margin-top: 120px;
+        margin-bottom: 37px;
+    }
+
+
+    .visitText{
+        font-size: 12px;
+        margin-top: -40px;
+    }
+    .handledText{
+        font-size: 12px;
+        margin-top: -40px;
+    }
+.clVisit img{
+    width:30%;
+}
+.fixedWhatsapp a {
+    width: 40px!important;
+    height: 40px!important;
+    line-height: 40px!important;
+}
+.fixedWhatsapp a i{
+    line-height: 40px!important;
+}
+.fulfilSec img{
+    width:100%;
+}
+    .homeBnrContent p {
+        font-size: 8px;
+    }
+    .flexSec h3+p {
+        font-size: 8px;
+    }
+    .clientSec p {
+        font-size: 8px;
+    }
+    .fulfilSec {
+        padding: 0 40px;
+        margin-top: -180px;
+        color: white;
+    }
+.FulfillzyRow h2{
+    font-size: 12px;
+}
+
+.weProvideH3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.clVisit {
+    padding: 30px 0 0px 0;
+}
+
+.mapHow {
+    margin-top: 0px;
+}
+.FulfillzyRow p {
+    width: 100%;
+    font-size: 8px;
+}
+.clVisit h5 {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+
+
+
+
+
+    .footer-copyright {
+        font-size: 8px;
+    }
+    .footerTop ul {
+        font-size: 8px;
+    }
+    .socialIcons a {
+        font-size: 8px;
+        margin: 0 5px;
+    }
+    .bnrContact h4 {
+        margin-top: 15%;
+    margin-bottom: 0%;
+    }
+    .moveTop {
+        height: 40px;
+        width: 40px;
+        margin-top: -40px;
+    }
+    .moveTop .fa-chevron-up {
+        font-size: 8px;
+        margin-top: 6px;
+    }
+    .contactForm .form-select {
+        height: 110px;
+        line-height: 110px;
+    }
+    .contactForm .form-control {
+        height: 35px;
+        line-height: 35px;
+    }
+    .footerTop h6 {
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .contactForm button,.contactForm button:hover,
+    .contactForm button:focus,
+    .contactForm button:active {
+        height: 35px;
+        line-height: 35px;
+        padding: 0 20px;
+        font-size: 8px;
+    }
+    .contactForm label {
+        font-size: 8px;
+    }
+
+    .bnrContact img{
+        width:50%;
+    }
+    .getquotePara {
+        margin: 20px 20px 30px 0;
+    }
+    .bnrContact .s7 p {
+        margin-top: 0px;
+        font-size: 8px;
+    }
+   .footerTop p{
+       font-size:8px;
+   }
+    .bnrContact .card {
+        padding: 40px 40px 5px 40px;
+        border-radius: 5px;
+    }
+    .bnrContact {
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+
+    .flexSec {
+        padding: 30px 10px 0px 10px;
+    }
+header img{
+    width:70%;
+}
+.brand-logo {
+    margin-top: 2px;
+}
+
+    header nav {
+        padding: 0 0px;
+    }
+
+
+.flexSec h5{
+    font-size:12px;
+}
+
+
+
+
+
+.bnrHome img {
+    margin-top: -60px;
+}
+
+
+
+
+
+.fulfilSec h2+p {
+    font-size: 8px;
+}
+
+    .moveTop {
+        height: 45px;
+        width: 45px;
+        margin-top: -45px;
+    }
+    .lifeSec .entrepreneur {
+        margin-top: -10px;
+    }
+    .servingSec .card {
+        padding: 5px;
+    }
+    .clientSec .goFlex {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .moveTop .fa-chevron-up {
+        font-size: 8px;
+        margin-top: 8px;
+    }
+    .footerTop ul {
+        font-size: 8px;
+    }
+    footer .footerTop {
+        padding: 10px 0 0px 0;
+    }
+    .footerTop h6 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .servingSec img{
+        width:100% !important;
+    }
+.footerTop p{
+    font-size:8px;
+}
+.footerTop ul li {
+    margin-bottom: 5px;
+}
+    .footer-copyright {
+        font-size: 8px;
+    }
+.footerTop img{
+    width:60%;
+}
+.goFlexP {
+    margin-bottom: -20px;
+}
+.servingSec .card p+div{
+    display: none;
+}
+    .servingSec .card p{
+        font-size:8px;
+        display: none;
+    }
+    .socialIcons a {
+        font-size: 8px;
+    }
+    .servingSec {
+        padding: 0 10px;
+        margin-top: -200px;
+    }
+    .clientSec {
+        margin-top: 0px;
+    }
+    .flexSec h3 {
+     font-size: 12px;
+    margin-top: 0px;
+    }
+    .fulImgSec img {
+        margin-top: 0px;
+    }
+    .rockManSec img {
+        margin-top: -140px;
+        width: 20%;
+    }
+    .clientSec img {
+        margin-left: 0;
+        height: auto;
+        width: 100%;
+    }
+    .homeBnrContent a, .homeBnrContent a:hover, .homeBnrContent a:active, .homeBnrContent a:focus, .homeBnrContent a:visited {
+        font-size: 8px;
+        height: 20px;
+        line-height: 20px;
+        border-radius: 5px;
+        padding: 0 15px;
+        margin-top: 0px;
+    }
+    .lifeSec img {
+        height: 100%;
+        width: 100%;
+    }
+    .flexSec h1 {
+        font-size: 12px;
+        margin-top: -410px;
+    }
+    .servingSec h2 {
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .flexSec img {
+        margin-top: 30px;
+        width: 70%;
+    }
+    .lifeSec {
+        padding:20px ​0 5px 0;
+    }
+.lifeSec h3{
+    font-size:12px;
+    margin-top: 30px;
+}
+.homeBnrContent h2{
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.rockManSec {
+    padding-right: 20px;
+}
+    .homeBnrContent {
+        padding: 2px 2px;
+    }
+.clientSec h3,
+.clientSec h2{
+font-size:12px;
+}
+
+
+.beflexH2 {
+    margin-bottom: -25px;
+
+}
+
+.handledCircle {
+    margin-top: -175px;
+    margin-bottom: 25px;
+}
+
+
+.visitCircle {
+    margin-top: -180px;
+    margin-bottom: 30px;
+}
+
+}
+
+
+
+@media screen and (min-width:301px) and (max-width:400px){
+
+
+    .showFeature p{
+font-size:12px;
+    }
+
+
+
+
+    .phoneCon {
+        padding-left: 0px;
+        margin-top: 40px;
+        font-size: 12px;
+    }
+
+    .addCon {
+        padding-left: 0px;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .mailCon {
+        padding-left: 0px;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+
+    .phoneCon:before,
+    .addCon:before,
+    .mailCon:before {
+        width: 20px;
+        height: 20px;
+        left: -30px;
+    }
+
+
+
+
+    .aboutBanner img {
+        margin-top: -60px;
+    }
+    .featuHigh {
+        padding: 5px 20px;
+        border-radius: 5px;
+    }
+    .goBig {
+        font-size: 50px;
+        margin-top: 10px;
+    }
+    .fulImgSec .brainSubHdng {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .clientSec {
+        padding: 10px 0;
+    }
+
+
+    .homeBnrContent img {
+        margin-top: -40px;
+        width: 40%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .fulImgSec {
+        padding: 20px 10px;
+    }
+
+
+    .tecPricing:before {
+        width: 50px;
+        height: 50px;
+        left: -30px;
+    }
+    .invenPricing:before {
+        width: 50px;
+        height: 50px;
+        left: -30px;
+    }
+    .inboPricing:before {
+        width: 50px;
+        height: 50px;
+        left: -30px;
+    }
+    .rtrnPricing:before {
+        width: 50px;
+        height: 50px;
+        left: -30px;
+    }
+    .outbPricing:before{
+        width: 50px;
+        height: 50px;
+        left: -30px;
+    }
+
+
+    .pricingLeft {
+        padding:0 0px 0 40px !important;
+    }
+    .pricingRight {
+        padding:0 0px 0 40px !important;
+    }
+    .pricingSec {
+        padding: 0 20px;
+    }
+
+    .pricingSec ul p {
+        font-size: 11px;
+    }
+
+    .pricingSec h3 {
+        font-size: 14px;
+        margin-bottom: -10px;
+    }
+
+
+    .featureSec h3 {
+        font-size: 14px;
+        margin-bottom: -5px;
+    }
+    .weAlso {
+        line-height: 20px;
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+.fulImgSec .brainHdng {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+    .featuHigh {
+        font-size: 8px;
+    }
+    .pricingSec h1 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .featureSec h1 {
+        font-size: 20px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    .featureBtn, .featureBtn:hover {
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 4px;
+        padding: 0 20px;
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+
+
+
+
+    .featureSec {
+        padding: 10px 10px;
+        margin-top: 0;
+    }
+    .featureSec .m4 {
+        height: auto;
+    }
+
+
+    .clientBgSec img {
+        margin-top: -40px;
+    }
+
+    .goBigPara {
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: -6px;
+        margin-bottom: -3px;
+    }
+    .lifeCycle {
+        margin-top: 0px;
+    }
+
+
+
+    .pricingPara {
+        margin-top: 10px;
+    }
+
+
+
+
+
+
+
+
+    .visionSec ol {
+        font-size: 12px;
+        line-height: 23px;
+        margin-left: -27px;
+    }
+
+
+    .visionSec h3 {
+        font-size: 18px;
+    }
+    .visionSec p {
+        font-size: 13px;
+        line-height: 21px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .aboutSec {
+        padding: 0 10px;
+    }
+
+
+    .aboutSec h1 {
+        font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    }
+
+    .visionImg {
+        width: 60%;
+        margin-top: 0;
+    }
+
+    .visionSec {
+        padding:0 10px 0px 10px;
+    }
+    .hourCircle {
+        margin-top: -180px;
+        margin-bottom: 30px;
+    }
+    .handledCircle {
+        margin-top: -180px;
+        margin-bottom: 30px;
+    }
+    .visitCircle {
+        margin-top: -180px;
+        margin-bottom: 30px;
+    }
+    .visitNumber{
+        font-size: 20px;
+        margin-top: 100px;
+        margin-bottom: 35px;
+    }
+    .handledNumber{
+        font-size: 20px;
+        margin-top: 100px;
+        margin-bottom: 35px;
+    }
+    .hourNumber{
+        font-size: 20px;
+        margin-top: 115px;
+        margin-bottom: 40px;
+    }
+
+
+    .visitText{
+        font-size: 15px;
+        margin-top: -40px;
+    }
+    .handledText{
+        font-size: 15px;
+        margin-top: -40px;
+    }
+.clVisit img{
+    width:30%;
+    margin-top: 5%;
+}
+.fixedWhatsapp a {
+    width: 40px!important;
+    height: 40px!important;
+    line-height: 40px!important;
+}
+.fixedWhatsapp a i{
+    line-height: 40px!important;
+}
+.fulfilSec img{
+    width:100%;
+}
+    .homeBnrContent p {
+        font-size: 12px;
+    }
+    .flexSec h3+p {
+        font-size: 12px;
+    }
+    .clientSec p {
+        font-size: 12px;
+    }
+    .fulfilSec {
+        padding: 0 40px;
+        margin-top: -180px;
+        color: white;
+    }
+.FulfillzyRow h2{
+    font-size: 16px;
+}
+
+.weProvideH3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.clVisit {
+    padding: 0px 0 0px 0;
+}
+
+.mapHow {
+    margin-top: 0px;
+}
+.FulfillzyRow p {
+    width: 100%;
+    color:#fec854 !important;
+    font-size: 12px;
+}
+.clVisit h5 {
+    font-size: 10px;
+    line-height: 15px;
+}
+
+
+
+
+
+
+
+    .footer-copyright {
+        font-size: 10px;
+    }
+    .footerTop ul {
+        font-size: 12px;
+    }
+    .socialIcons a {
+        font-size: 16px;
+        margin: 0 5px;
+    }
+    .bnrContact h4 {
+        margin-top: 10%;
+        font-size: 16px;
+        margin-bottom: -4%;
+    }
+    .moveTop {
+        height: 40px;
+        width: 40px;
+        margin-top: -40px;
+    }
+    .moveTop .fa-chevron-up {
+        font-size: 16px;
+        margin-top: 6px;
+    }
+    .contactForm .form-select {
+        height: 110px;
+        line-height: 110px;
+    }
+    .contactForm .form-control {
+        height: 35px;
+        line-height: 35px;
+    }
+    .footerTop h6 {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .contactForm button,.contactForm button:hover,
+    .contactForm button:focus,
+    .contactForm button:active {
+        height: 35px;
+        line-height: 35px;
+        padding: 0 20px;
+        font-size: 13px;
+    }
+    .contactForm label {
+        font-size: 12px;
+    }
+
+    .bnrContact img{
+        width:50%;
+    }
+    .getquotePara {
+        margin: 20px 0px 0px 0;
+        font-size: 12px;
+    }
+    .bnrContact .s7 p {
+        margin-top: 0px;
+        font-size: 12px;
+    }
+   .footerTop p{
+       font-size:14px;
+       margin-right: 0;
+   }
+    .bnrContact .card {
+        padding: 20px 20px 1px 20px;
+        border-radius: 3px;
+    }
+    .bnrContact {
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .flexSec {
+        padding: 30px 10px 0px 10px;
+    }
+
+
+
+
+
+header img{
+    width:70%;
+}
+.brand-logo {
+    margin-top: 2px;
+}
+
+    header nav {
+        padding: 0 0px;
+    }
+
+
+.flexSec h5{
+    font-size:18px;
+}
+
+
+
+
+
+.bnrHome img {
+    margin-top: -60px;
+}
+
+
+
+
+
+.fulfilSec h2+p {
+    font-size: 12px;
+}
+
+    .moveTop {
+        height: 45px;
+        width: 45px;
+        margin-top: -45px;
+    }
+    .lifeSec .entrepreneur {
+        margin-top: -10px;
+    }
+    .servingSec .card {
+        padding: 5px;
+    }
+    .clientSec .goFlex {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-size: 16px;
+        margin-left: 7px;
+    }
+    .moveTop .fa-chevron-up {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    .footerTop ul {
+        font-size: 12px;
+    }
+    footer .footerTop {
+        padding: 10px 0 0px 0;
+    }
+    .footerTop h6 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .servingSec img{
+        width:100% !important;
+    }
+.footerTop p{
+    font-size:12px;
+}
+.footerTop ul li {
+    margin-bottom: 5px;
+}
+    .footer-copyright {
+        font-size: 8px;
+    }
+.footerTop img{
+    width:80%;
+}
+.goFlexP {
+    margin-bottom: -20px;
+}
+.servingSec .card p+div{
+    display: none;
+}
+    .servingSec .card p{
+        font-size:10px;
+        display: none;
+    }
+    .socialIcons a {
+        font-size: 20px;
+    }
+    .servingSec {
+        padding: 0 10px;
+        margin-top: -200px;
+    }
+    .clientSec {
+        margin-top: 0px;
+    }
+    .flexSec h3 {
+     font-size: 14px;
+    margin-top: 0px;
+    }
+    .fulImgSec img {
+        margin-top: 0px;
+    }
+    .rockManSec img {
+        margin-top: -140px;
+        width: 20%;
+    }
+    .clientSec img {
+        margin-left: 0;
+        height: auto;
+        width: 100%;
+    }
+    .homeBnrContent a, .homeBnrContent a:hover, .homeBnrContent a:active, .homeBnrContent a:focus, .homeBnrContent a:visited {
+        font-size: 10px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 3px;
+        padding: 0 20px;
+        margin-top: 10px;
+    }
+    .lifeSec img {
+        height: 100%;
+        width: 100%;
+    }
+    .flexSec h1 {
+        font-size: 20px;
+        margin-top: -410px;
+    }
+    .servingSec h2 {
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+    .flexSec img {
+        margin-top: 90px;
+        width: 70%;
+    }
+    .lifeSec {
+        padding: 40px 0 5px 0;
+    }
+.lifeSec h3{
+    font-size:16px;
+}
+.homeBnrContent h2{
+    font-size:16px;
+    line-height: 22px;
+}
+.rockManSec {
+    padding-right: 20px;
+}
+    .homeBnrContent {
+        padding: 10px 20px;
+    }
+.clientSec h3,
+.clientSec h2{
+font-size:17px;
+}
+
+
+.beflexH2 {
+    margin-bottom: -25px;
+}
+
+
+html,body{
+    font-size:12px;
+}
+
+
+
+}
+
+
+
+
+
+@media screen and (min-width:401px) and (max-width:600px){
+    .hourCircle {
+        margin-top: -160px;
+        margin-bottom: 54px;
+    }
+    .footerTop p {
+        margin-right: 0%;
+    }
+    .visitCircle {
+        margin-top: -170px;
+        margin-bottom: 40px;
+    }
+    .handledCircle {
+        margin-top: -170px;
+        margin-bottom: 40px;
+    }
+
+
+    .aboutBanner img {
+        margin-top: -60px;
+    }
+
+
+
+
+
+
+    .flexSec {
+        padding:30px 10px 0px 0;
+    }
+    .featuHigh {
+        padding: 5px 20px;
+        border-radius: 5px;
+    }
+    .goBig {
+        font-size: 50px;
+        margin-top: 10px;
+    }
+    .fulImgSec .brainSubHdng {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .clientSec {
+        padding: 30px;
+    }
+
+
+    .homeBnrContent img {
+        margin-top: -40px;
+        width: 40%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .fulImgSec {
+        padding: 20px 10px;
+    }
+
+
+    .tecPricing:before {
+        width: 50px;
+        height: 50px;
+        left: -30px;
+    }
+    .invenPricing:before {
+        width: 50px;
+        height: 50px;
+        left: -30px;
+    }
+    .inboPricing:before {
+        width: 50px;
+        height: 50px;
+        left: -30px;
+    }
+    .rtrnPricing:before {
+        width: 50px;
+        height: 50px;
+        left: -30px;
+    }
+    .outbPricing:before{
+        width: 50px;
+        height: 50px;
+        left: -30px;
+    }
+
+
+    .pricingLeft {
+        padding:0 0px 0 40px !important;
+    }
+    .pricingRight {
+        padding: 0 0px 0 40px !important;
+    }
+    .pricingSec {
+        padding: 0 20px;
+    }
+
+    .pricingSec ul p {
+        font-size: 11px;
+    }
+
+    .pricingSec h3 {
+        font-size: 16px;
+        margin-bottom: -10px;
+    }
+
+
+    .featureSec h3 {
+        font-size: 14px;
+        margin-bottom: -5px;
+    }
+    .weAlso {
+        line-height: 20px;
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+.fulImgSec .brainHdng {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+    .featuHigh {
+        font-size: 10px;
+    }
+    .pricingSec h1 {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    .featureSec h1 {
+        font-size: 20px;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    .featureBtn, .featureBtn:hover {
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 4px;
+        padding: 0 20px;
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+
+
+
+
+    .featureSec {
+        padding: 10px 10px;
+        margin-top: 0;
+    }
+    .featureSec .m4 {
+        height: auto;
+    }
+
+
+    .clientBgSec img {
+        margin-top: -40px;
+    }
+
+    .goBigPara {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 0px;
+        margin-bottom: -3px;
+    }
+    .lifeCycle {
+        margin-top: 0px;
+    }
+
+
+
+    .pricingPara {
+        margin-top: 10px;
+    }
+
+
+
+
+
+
+
+
+    .visionSec ol {
+        font-size: 12px;
+        line-height: 23px;
+        margin-left: -27px;
+    }
+
+
+    .visionSec h3 {
+        font-size: 18px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .visionSec p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .aboutSec {
+        padding: 0 20px;
+    }
+
+
+    .aboutSec h1 {
+        font-size: 20px;
+    }
+
+    .visionImg {
+        width: 60%;
+        margin-top: 5%;
+    }
+
+    .visionSec {
+        padding:0 20px 0px 20px;
+    }
+
+
+
+
+    .visitNumber{
+        font-size: 20px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    .handledNumber{
+        font-size: 20px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    .hourNumber{
+        font-size: 20px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+
+    .visitText{
+        font-size: 15px;
+        margin-top: -40px;
+    }
+    .handledText{
+        font-size: 15px;
+        margin-top: -40px;
+    }
+.clVisit img{
+    width:30%;
+    margin-top: 5%;
+}
+.fixedWhatsapp a {
+    width: 40px!important;
+    height: 40px!important;
+    line-height: 40px!important;
+}
+.fixedWhatsapp a i{
+    line-height: 40px!important;
+}
+.fulfilSec img{
+    width:100%;
+}
+    .homeBnrContent p {
+        font-size: 12px;
+    }
+    .flexSec h3+p {
+        font-size: 12px;
+    }
+    .clientSec p {
+        font-size: 12px;
+    }
+    .fulfilSec {
+        padding: 0 40px;
+        margin-top: -180px;
+        color: white;
+    }
+.FulfillzyRow h2{
+    font-size: 16px;
+}
+
+.weProvideH3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.clVisit {
+    padding: 30px 0 0px 0;
+}
+
+.mapHow {
+    margin-top: 0px;
+}
+.FulfillzyRow p {
+    width: 50%;
+}
+.clVisit h5 {
+    font-size: 10px;
+    line-height: 15px;
+}
+
+
+
+
+
+
+
+    .footer-copyright {
+        font-size: 10px;
+    }
+    .footerTop ul {
+        font-size: 12px;
+    }
+    .socialIcons a {
+        font-size: 16px;
+        margin: 0 5px;
+    }
+    .bnrContact h4 {
+        margin-top: 15%;
+    margin-bottom: 0%;
+    }
+    .moveTop {
+        height: 40px;
+        width: 40px;
+        margin-top: -40px;
+    }
+    .moveTop .fa-chevron-up {
+        font-size: 16px;
+        margin-top: 6px;
+    }
+    .contactForm .form-select {
+        height: 110px;
+        line-height: 110px;
+    }
+    .contactForm .form-control {
+        height: 35px;
+        line-height: 35px;
+    }
+    .footerTop h6 {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .contactForm button,.contactForm button:hover,
+    .contactForm button:focus,
+    .contactForm button:active {
+        height: 35px;
+        line-height: 35px;
+        padding: 0 20px;
+        font-size: 13px;
+    }
+    .contactForm label {
+        font-size: 12px;
+    }
+
+    .bnrContact img{
+        width:50%;
+    }
+    .getquotePara {
+        margin: 20px 20px 30px 0;
+    }
+    .bnrContact .s7 p {
+        margin-top: 0px;
+        font-size: 12px;
+    }
+   .footerTop p{
+       font-size:14px;
+   }
+    .bnrContact .card {
+        padding: 40px 40px 5px 40px;
+        border-radius: 5px;
+    }
+    .bnrContact {
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header img{
+    width:70%;
+}
+.brand-logo {
+    margin-top: 15px;
+}
+
+    header nav {
+        padding: 0 0px;
+    }
+
+
+.flexSec h5{
+    font-size:14px;
+}
+
+
+
+
+
+.bnrHome img {
+    margin-top: -60px;
+}
+
+
+
+
+
+.fulfilSec h2+p {
+    font-size: 12px;
+}
+
+    .moveTop {
+        height: 45px;
+        width: 45px;
+        margin-top: -45px;
+    }
+    .lifeSec .entrepreneur {
+        margin-top: -10px;
+    }
+    .servingSec .card {
+        padding: 5px;
+    }
+    .clientSec .goFlex {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .moveTop .fa-chevron-up {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    .footerTop ul {
+        font-size: 12px;
+    }
+    footer .footerTop {
+        padding: 10px 0 0px 0;
+    }
+    .footerTop h6 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .servingSec img{
+        width:100% !important;
+    }
+.footerTop p{
+    font-size:12px;
+}
+.footerTop ul li {
+    margin-bottom: 5px;
+}
+    .footer-copyright {
+        font-size: 8px;
+    }
+.footerTop img{
+    width:60%;
+}
+.goFlexP {
+    margin-bottom: -20px;
+}
+.servingSec .card p+div{
+    display: none;
+}
+    .servingSec .card p{
+        font-size:10px;
+        display: none;
+    }
+    .socialIcons a {
+        font-size: 20px;
+    }
+    .servingSec {
+        padding: 0 10px;
+        margin-top: -200px;
+    }
+    .clientSec {
+        margin-top: 0px;
+    }
+    .flexSec h3 {
+     font-size: 14px;
+    margin-top: 0px;
+    }
+    .fulImgSec img {
+        margin-top: 0px;
+    }
+    .rockManSec img {
+        margin-top: -140px;
+        width: 20%;
+    }
+    .clientSec img {
+        margin-left: 0;
+        height: auto;
+        width: 100%;
+    }
+    .homeBnrContent a, .homeBnrContent a:hover, .homeBnrContent a:active, .homeBnrContent a:focus, .homeBnrContent a:visited {
+        font-size: 10px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 5px;
+        padding: 0 20px;
+        margin-top: 10px;
+    }
+    .lifeSec img {
+        height: 100%;
+    }
+    .flexSec h1 {
+        font-size: 20px;
+        margin-top: -410px;
+    }
+    .servingSec h2 {
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+    .flexSec img {
+        margin-top: 30px;
+        width: 70%;
+    }
+    .lifeSec {
+        padding: 40px 0 5px 0;
+    }
+.lifeSec h3{
+    font-size:16px;
+}
+.homeBnrContent h2{
+    font-size:16px;
+    line-height: 22px;
+}
+.rockManSec {
+    padding-right: 20px;
+}
+    .homeBnrContent {
+        padding: 10px 20px;
+    }
+.clientSec h3,
+.clientSec h2{
+font-size:17px;
+}
+
+
+.beflexH2 {
+    margin-bottom: -15px;
+}
+
+
+html,body{
+    font-size:13px;
+}
+
+
+
+}
+@media screen and (min-width:601px) and (max-width:767px){
+    .clVisit img{
+        width:60%;
+    }
+    .handledNumber,
+    .visitNumber,
+    .hourNumber {
+        font-size: 20px;
+    }
+
+    header nav {
+        padding: 0 10px;
+    }
+
+
+    footer .footerTop {
+        padding: 30px 0 0px 0;
+    }
+
+    .hourCircle {
+        margin-top: -100px;
+        margin-bottom: 53px;
+    }
+    .handledCircle
+    {
+        margin-top: -100px;
+        margin-bottom: 40px;
+    }
+    .visitCircle{
+        margin-top: -100px;
+        margin-bottom: 40px;
+    }
+
+
+    .visitText {
+        font-size: 15px;
+        margin-top: -30px;
+    }
+    .handledText {
+        font-size: 15px;
+        margin-top: -30px;
+    }
+    .hourText {
+        font-size: 15px;
+        margin-top: -30px;
+    }
+
+
+
+    .fulImgSec {
+        padding: 20px 10px;
+    }
+    .featureSec .m4 {
+        height: 170px;
+    }
+    .featureBtn, .featureBtn:hover {
+        border-radius: 4px;
+        padding: 0 20px;
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+
+    .lifeSec {
+        padding: 40px 0 10px 0;
+    }
+
+    .featuHigh {
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+
+
+
+    .homeBnrContent img {
+        margin-top: -80px;
+        width: 40%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .inboPricing:before,
+    .rtrnPricing:before,
+    .outbPricing:before,
+    .invenPricing:before,
+    .tecPricing:before {
+        width: 40px;
+        height: 40px;
+        left: -10px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .pricingPara {
+        margin-top: 10px;
+    }
+
+
+    .pricingSec ul p {
+        font-size: 10px;
+    }
+
+    .pricingLeft {
+        padding: 0 30px !important;
+    }
+    .pricingRight {
+        padding: 0 30px !important;
+    }
+
+
+
+    .goBig {
+        font-size: 15px;
+    }
+
+
+    .clientBgSec img {
+        margin-top: -60px;
+    }
+
+    .weAlso {
+        line-height: 20px;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
+
+    .featureSec h3 {
+        font-size: 15px;
+    }
+    .featureSec h1 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .pricingSec h3 {
+        font-size: 16px;
+        margin-bottom: -10px;
+    }
+    .featuHigh {
+        font-size: 12px;
+    }
+    .featureBtn, .featureBtn:hover {
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+    }
+.featureSec  p{
+    font-size: 10px;
+}.pricingSec h1 {
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+    .goBigPara {
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
+
+    .lifeCycle {
+        margin-top: 0;
+    }
+
+
+
+    .featureSec {
+        padding: 5px 20px;
+        margin-top: 0;
+    }
+
+    .fulImgSec .brainHdng {
+        font-size: 25px;
+        margin-bottom: -40px;
+    }
+    .pricingSec {
+        padding: 0 10px;
+    }
+    .fulImgSec .brainSubHdng {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+.addCon,
+.mailCon,
+    .phoneCon {
+        font-size: 12px;
+    }
+
+
+    .contUl {
+        margin-left: 20%;
+    }
+
+
+
+
+
+
+    .fulfilSec {
+        padding: 0 50px;
+        margin-top: -210px;
+    }
+    .flexSec h3 {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    .flexSec h3+p {
+        font-size: 14px;
+    }
+    .fulfilSec h2+p {
+        font-size: 16px;
+    }
+.FulfillzyRow h2{
+    font-size: 20px;
+}
+.weProvideH3 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+    .clientSec p {
+        font-size: 14px;
+    }
+    .mapHow {
+        margin-top: 0px;
+        margin-bottom: -20px;
+    }
+    .clVisit h5 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .clVisit {
+        padding: 30px 0 0px 0;
+    }
+
+
+
+
+
+
+    .homeBnrContent p{
+        font-size:12px;
+    }
+    .footer-copyright {
+        font-size: 10px;
+    }
+    .footerTop ul {
+        font-size: 12px;
+    }
+    .socialIcons a {
+        font-size: 14px;
+        margin: 0 1px;
+    }
+    .bnrContact h4 {
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+    .moveTop {
+        height: 40px;
+        width: 40px;
+        margin-top: -40px;
+    }
+    .moveTop .fa-chevron-up {
+        font-size: 16px;
+        margin-top: 6px;
+    }
+    .contactForm .form-select {
+        height: 110px;
+        line-height: 110px;
+    }
+    .contactForm .form-control {
+        height: 35px;
+        line-height: 35px;
+    }
+    .footerTop h6 {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .contactForm button,.contactForm button:hover,
+    .contactForm button:focus,
+    .contactForm button:active {
+        height: 35px;
+        line-height: 35px;
+        padding: 0 20px;
+        font-size: 13px;
+    }
+    .contactForm label {
+        font-size: 12px;
+    }
+
+    .bnrContact img{
+        width:50%;
+    }
+    .getquotePara {
+        margin: 40px 20px 40px 0;
+    }
+    .bnrContact .s7 p {
+        margin-top: 0px;
+        font-size: 12px;
+    }
+   .footerTop p{
+       font-size:10px;
+   }
+    .bnrContact .card {
+        padding: 30px 20px 5px 20px;
+        border-radius: 5px;
+    }
+    .bnrContact {
+        padding-top: 130px;
+        padding-bottom: 20px;
+    }
+
+    .aboutSec {
+        padding: 0 30px;
+    }
+
+
+    .visionSec p {
+        font-size: 13px;
+        line-height: 22px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .aboutSec h1 {
+        font-size: 30px;
+    }
+
+
+    .visionSec {
+        padding: 0 40px 50px 40px;
+    }
+
+
+    .visionImg {
+        width: 70%;
+        margin-top: 50%;
+    }
+    .visionSec ol {
+        font-size: 12px;
+        line-height: 18px;
+        margin-left: -23px;
+    }
+
+
+
+    .rockManSec {
+        padding-right: 30px;
+    }
+    .clientSec img {
+        margin-left: 0;
+        height: auto;
+        margin-top: 0;
+        width: 100%;
+    }
+    .servingSec .card p {
+        font-size: 10px;
+    }
+    .servingSec h2 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .flexSec h1 {
+        font-size: 30px;
+        margin-top: -450px;
+    }
+    .servingSec .card {
+        padding: 5px;
+    }
+    .servingSec {
+        margin-top: -300px;
+    }
+    .servingSec {
+        padding: 0 20px;
+    }
+    .homeBnrContent {
+        padding: 10px 10px;
+    }
+.homeBnrContent h2{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.rockManSec img {
+    width: 30%;
+    margin-top: -80px;
+}
+.clientSec .goFlex {
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+.fulImgSec img {
+    margin-top: 0px;
+    width: 70%;
+}
+.clientSec h3,
+.clientSec h2{
+font-size: 20px;
+}
+.clientSec {
+    margin-top: 0px;
+}
+.flexSec img {
+    margin-top: 60px;
+    width: 50%;
+}
+.homeBnrContent a, .homeBnrContent a:hover, .homeBnrContent a:active, .homeBnrContent a:focus, .homeBnrContent a:visited {
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+.moveTop {
+    height: 50px;
+    width: 50px;
+}
+.lifeSec h3{
+    font-size:20px;
+}
+.moveTop .fa-chevron-up {
+    font-size: 20px;
+    margin-top: 9px;
+}
+
+.beflexH2 {
+    margin-bottom: -10px;
+}
+
+.lifeSec .entrepreneur {
+    margin-top: -10px;
+}
+
+.lifeSec img{
+    height: auto;
+    width: 70%;
+}
+
+nav .sidenav-trigger {
+    margin: 20px 18px;
+}
+
+
+
+
+
+
+html,body{
+    font-size:14px;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width:768px) and (max-width:870px){
+
+
+}
+
+
+
+
+
+@media screen and (min-width:871px) and (max-width:991px){
+    .homeBnrContent {
+        padding: 0 60px;
+        /* margin-top: -1030px; */
+    }
+
+
+    .rockManSec img {
+        margin-top: -70px;
+        width: 30%;
+        margin-bottom: 50px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width:768px) and (max-width:991px){
+
+    .visitCircle {
+        margin-top: -180px;
+        margin-bottom: 40px;
+    }
+    html,body{
+        font-size:14px;
+    }
+
+
+    .handledCircle {
+        margin-bottom: 42px;
+    }
+    .visionSec h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .pricingPara {
+        margin-top: 0;
+    }
+    .featuHigh {
+        padding: 5px 20px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+    .tecPricing,
+    .invenPricing,
+    .rtrnPricing,
+    .inboPricing,
+    .tecPricing {
+        padding-left: 30px;
+    }
+    header nav {
+        padding: 0 20px;
+    }
+
+
+
+    .fulImgSec {
+        padding: 20px 50px;
+    }
+
+
+
+
+
+
+    .outbPricing:before,
+    .invenPricing:before,
+    .rtrnPricing:before,
+    .inboPricing:before,
+    .tecPricing:before{
+        width: 60px;
+        height: 60px;
+    }
+
+
+
+    .showFeature .m4 {
+        height: 210px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .homeBnrContent {
+        padding: 0 20px 30px 30px;
+    }
+    .lifeSec {
+        padding: 90px 0 10px 0;
+    }
+
+    .homeBnrContent img {
+        margin-top: -100px;
+        width: 40%;
+    }
+
+
+
+
+
+
+
+
+
+    .servingSec .owl-nav .owl-next {
+        left: 660px;
+    }
+    .servingSec .owl-nav .owl-prev {
+        left: -50px;
+    }
+
+    .hourCircle {
+        margin-top: -160px;
+        margin-bottom: 62px;
+    }
+
+
+
+    .servingSec .owl-nav {
+        margin-top: -15%;
+    }
+    .aboutSec {
+        padding: 0 50px;
+    }
+    .visionSec p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .aboutSec h1 {
+        font-size: 30px;
+    }
+
+    .visionSec {
+        padding: 0 60px 50px 60px;
+    }
+    .addCon,
+    .phoneCon,
+    .mailCon {
+        font-size: 14px;
+    }
+
+    .visionSec ol {
+        font-size: 12px;
+        line-height: 18px;
+        margin-left: -26px;
+    }
+
+    .visionImg {
+        width: 70%;
+        margin-top: 30%;
+    }
+
+
+
+
+    .visitText{
+        font-size: 16px;
+        margin-top: 0px;
+    }
+    .handledText{
+        font-size: 16px;
+        margin-top: 0px;
+    }
+
+
+    .pricingLeft {
+        padding: 0 70px !important;
+    }
+    .pricingRight {
+        padding: 0 70px !important;
+    }
+
+
+    .visitNumber{
+        font-size: 20px;
+        margin-top: 94px;
+        margin-bottom: -5px;
+    }
+    .handledNumber{
+        font-size: 20px;
+    margin-top: 90px;
+    margin-bottom: -5px;
+    }
+    .hourNumber{
+        font-size: 20px;
+        margin-top: 90px;
+        margin-bottom: -20px;
+    }
+    .weAlso {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        line-height: 30px;
+    }
+
+
+
+
+
+
+    .pricingSec h3 {
+        font-size: 16px;
+        margin-bottom: -10px;
+    }
+    .pricingSec ul p {
+        font-size: 12px;
+    }
+    .pricingSec {
+        padding: 0 20px;
+    }
+
+
+    .fulImgSec .brainHdng {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .fulImgSec .brainSubHdng {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .pricingSec h1 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .goBig {
+        font-size: 30px;
+    }
+    .goBigPara {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+
+    .lifeCycle {
+        margin-top: -50px;
+    }
+    .featureSec h3 {
+        font-size: 18px;
+    }
+    .featureSec h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .featureBtn, .featureBtn:hover {
+        font-size: 14px;
+        height: 33px;
+        line-height: 33px;
+        padding: 0 20px;
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+
+    .featureSec {
+        padding: 10px 20px;
+        margin-top: 0;
+    }
+
+    .fulImgSec img {
+        margin-top: 0px;
+    }
+
+
+    .clVisit {
+        padding: 40px 0 0px 0;
+    }
+
+    .flexSec h3+p {
+        font-size: 16px;
+    }
+    .clientSec p {
+        font-size: 16px;
+    }
+    .flexSec {
+        padding:30px ​0px 0 0;
+    }
+    .flexSec h3 {
+        font-size: 20px;
+        margin-top: 0;
+    }
+    .fulfilSec h2+p {
+        font-size: 14px;
+    }
+    .fulfilSec {
+        padding: 0 50px;
+        margin-top: -250px;
+    }
+    .weProvideH3 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    .mapHow {
+        margin-top: 10px;
+    }
+
+    .clVisit h5 {
+        font-size: 13px;
+        line-height: 18px;
+    }
+.clVisit img{
+    width:50%;
+}
+
+.fulfilSec h2{
+    font-size: 25px;
+}
+
+
+
+
+    nav .sidenav-trigger {
+        margin: 20px 18px;
+    }
+
+
+    .homeBnrContent p{
+        font-size:17px;
+    }
+    .moveTop {
+        height: 40px;
+        width: 40px;
+        margin-top: -40px;
+    }
+    .moveTop .fa-chevron-up {
+        font-size: 16px;
+        margin-top: 6px;
+    }
+    .contactForm .form-select {
+        height: 140px;
+        line-height: 140px;
+    }
+    .contactForm .form-control {
+        height: 40px;
+        line-height: 40px;
+    }
+    .footerTop h6 {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .contactForm button,.contactForm button:hover,
+    .contactForm button:focus,
+    .contactForm button:active {
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        font-size: 14px;
+    }
+
+    .bnrContact img{
+        width:50%;
+    }
+    .getquotePara {
+        margin: 40px 50px 40px 0;
+    }
+    .bnrContact .s7 p {
+        margin-top: 0px;
+        font-size: 14px;
+    }
+   .footerTop p{
+       font-size:17px;
+   }
+    .bnrContact .card {
+        padding: 30px 20px 5px 20px;
+        border-radius: 5px;
+    }
+    .bnrContact {
+        padding-top: 160px;
+        padding-bottom: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidenav-trigger{
+    margin-top:350px ​!important;
+}
+    .clientSec h3{
+        font-size:20px;
+    }
+    .clientSec h2{
+        font-size:20px;
+    }
+
+    .clientSec img {
+        height: auto;
+        margin-left: 0;
+        margin-top: 0%;
+    }
+    .flexSec img {
+        margin-top:50px;
+        width: 50%;
+    }
+    .lifeSec img {
+        height: auto;
+        width: 90%;
+    }
+    .flexSec h1 {
+        font-size: 30px;
+        margin-top: -500px;
+    }
+    .clientBgSec img {
+        margin-top: -440px;
+    }
+    .clientSec .goFlex {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    .servingSec{
+        margin-top:-390px;
+    }
+    .servingSec h2{
+        margin-bottom:20px;
+        font-size: 20px;
+    }
+    .servingSec .card p{
+        font-size: 12px;
+    }
+    .socialIcons a {
+        font-size: 20px;
+        margin:0 2px;
+    }
+    .footerTop h6 {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .goFlexP {
+        margin-bottom: -15px;
+    }
+    .rockManSec {
+        padding-right: 40px;
+    }
+    .footerTop ul {
+        font-size: 12px;
+    }
+.lifeSec h3{
+    font-size:20px;
+}
+footer img{
+        width: 70%;
+}
+.footerTop p{
+    font-size:12px;
+}
+.lifeSec .entrepreneur {
+    margin-top: -10px;
+}
+.footer-copyright {
+    font-size: 10px;
+}
+.moveTop .fa-chevron-up {
+    font-size: 20px;
+    margin-top: 7px;
+}
+.moveTop {
+    height: 50px;
+    width: 50px;
+}
+
+    .clientSec {
+        margin-top: 0;
+
+    }
+    .homeBnrContent h2{
+font-size: 24px;
+    }
+    .servingSec {
+        padding: 0 50px;
+    }
+
+    .beflexH2 {
+        margin-bottom: -20px;
+    }
+    .rockManSec img {
+        margin-top: -120px;
+        width: 30%;
+    }
+    .homeBnrContent a, .homeBnrContent a:hover, .homeBnrContent a:active, .homeBnrContent a:focus, .homeBnrContent a:visited {
+        font-size: 14px;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 5px;
+        padding: 0 30px;
+        margin-top: 0;
+    }
+
+}
+@media screen and (min-width:992px) and (max-width:1044px){
+    .homeBnrContent {
+        padding:50px 30px 50px 90px;
+        /* margin-top: -1010px; */
+    }
+}
+@media screen and (min-width:1044px) and (max-width:1199px){
+    .homeBnrContent {
+        padding:0 20px 10px 100px;
+        /* margin-top: -1130px; */
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px){
+    .aboutSec {
+        padding: 0 100px;
+    }
+
+    .featuHigh {
+        padding: 7px 30px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+
+
+    .fulImgSec {
+        padding: 40px 50px;
+    }
+
+
+    .showFeature .m4 {
+        height: 200px;
+    }
+
+
+
+
+
+
+
+
+    .lifeSec {
+        padding: 50px 0 10px 0;
+    }
+
+
+
+    .servingSec .owl-nav .owl-next {
+        left: 870px;
+    }
+    .visionSec p {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .homeBnrContent img {
+        margin-top: -50px;
+        width: 45%;
+    }
+    .visionImg {
+        width: 70%;
+        margin-top: 13%;
+    }
+    .visionSec {
+        padding:0 100px 50px 100px;
+    }
+    .visionSec ol {
+        font-size: 18px;
+    line-height: 27px;
+    margin-left: -20px;
+    }
+
+
+
+
+
+
+
+
+
+    .aboutBanner img {
+        margin-top: -80px;
+    }
+    .aboutSec h1 {
+        font-size: 35px;
+    }
+.mailCon,
+   .phoneCon,
+    .addCon {
+        font-size: 12px;
+    }
+
+
+
+    .getquotePara {
+        margin: 40px 150px 50px 0;
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+    .outbandUl {
+        margin-top: -40px;
+    }
+    .weAlso {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .pricingLeft {
+        padding: 0 70px !important;
+    }
+    .pricingRight {
+        padding: 0 70px !important;
+    }
+    .pricingSec ul p {
+        font-size: 12px;
+    }
+
+    .fulImgSec .brainHdng {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .fulImgSec .brainSubHdng {
+        font-size: 35px;
+        margin-top: 0px;
+    }
+
+
+
+
+
+
+
+
+    .lifeCycle {
+        margin-top: 0;
+    }
+
+
+
+.lifeSec h3{
+    font-size:30px;
+}
+.goBig {
+    font-size: 30px;
+}
+
+.goBigPara {
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+.clientBgSec img {
+    margin-top: -110px;
+}
+
+    .clVisit h5 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .flexSec h3+p {
+        font-size: 16px;
+    }
+    .fulfilSec h2+p {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .flexSec h3 {
+        font-size: 25px;
+    }
+    .homeBnrContent p{
+        font-size: 16px;
+    }
+    .clientSec p {
+        font-size: 16px;
+    }
+
+    .fulfilSec {
+        padding: 0 90px;
+        margin-top: 20px;
+        color: white;
+    }
+
+.clVisit img{
+    width:50%;
+}
+.clVisit {
+    padding:50px 130px 0px 140px;
+}
+.FulfillzyRow h2 {
+    font-size: 38px;
+    margin-top: -350px;
+}
+.weProvideH3 {
+    margin-top: 60px;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.visitCircle {
+    margin-top: -120px;
+    margin-bottom: 40px;
+}
+.handledCircle {
+    margin-top: -120px;
+    margin-bottom: 40px;
+}
+.visitNumber{
+    font-size: 25px;
+}
+.handledNumber{
+    font-size: 25px;
+}
+.hourNumber{
+    font-size: 25px;
+}
+
+.visitText{
+    font-size: 20px;
+    margin-top: -30px;
+}
+.handledText{
+    font-size: 20px;
+    margin-top: -30px;
+}
+.hourCircle {
+    margin-top: -115px;
+    margin-bottom: 60px;
+}
+
+.mapHow {
+    margin-top: -60px;
+    margin-bottom: -20px;
+}
+    .moveTop {
+        height: 40px;
+        width: 40px;
+        margin-top: -40px;
+    }
+    .moveTop .fa-chevron-up {
+        font-size: 16px;
+        margin-top: 6px;
+    }
+    .contactForm .form-select {
+        height: 140px;
+        line-height: 140px;
+    }
+    .contactForm .form-control {
+        height: 40px;
+        line-height: 40px;
+    }
+    .footerTop h6 {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .contactForm button,.contactForm button:hover,
+    .contactForm button:focus,
+    .contactForm button:active {
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        font-size: 14px;
+    }
+
+    .bnrContact img{
+        width:50%;
+    }
+
+    .bnrContact .s7 p {
+        margin-top: 0px;
+        font-size: 14px;
+    }
+   .footerTop p{
+       font-size:12px;
+   }
+    .bnrContact .card {
+        padding: 30px 20px 5px 20px;
+        border-radius: 5px;
+    }
+    .bnrContact {
+        padding-top: 160px;
+        padding-bottom: 20px;
+    }
+    .goFlexP {
+        margin-bottom: -15px;
+    }
+
+    .homeBnrContent h2{
+        font-size: 28px;
+    }
+    .hide-on-med-and-down {
+        margin-top: 15px;
+    }
+    .flexSec img {
+        width: 60%;
+    }
+    .clientSec .goFlex {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+
+header img{
+    width:50%;
+}
+
+
+    .servingSec h2 {
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+
+    .flexSec h1 {
+        font-size: 60px;
+        margin-top: -660px;
+    }
+    .featureSec h3 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .featureSec h1 {
+        font-size: 40px;
+    }
+    .featureSec {
+        padding: 10px 50px;
+    }
+    .featureBtn, .featureBtn:hover {
+        font-size: 18px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .servingSec .card p{
+        font-size: 12px;
+    }
+    .pricingSec {
+        padding: 0 50px;
+    }
+    .pricingSec h1 {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    .pricingSec h3 {
+        font-size: 20px;
+        margin-bottom: -10px;
+    }
+    .lifeSec img{
+        height: auto;
+        width: 80%;
+    }
+    .clientSec img {
+        margin-top: 0;
+        height: auto;
+        width: 90%;
+    }
+    .homeBnrContent a, .homeBnrContent a:hover, .homeBnrContent a:active, .homeBnrContent a:focus, .homeBnrContent a:visited {
+        font-size: 15px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 5px;
+        padding: 0 30px;
+        margin-top: 10px;
+    }
+    .lifeSec .entrepreneur {
+        margin-top: -5px;
+    }
+    .rockManSec img {
+        margin-top: -130px;
+        width: 30%;
+    }
+
+    .beflexH2 {
+        margin-bottom: -10px;
+    }
+
+
+
+
+
+
+
+
+
+    .servingSec {
+        padding: 0 80px;
+        margin-top: -400px;
+    }
+
+
+
+    .socialIcons a {
+        font-size: 15px;
+        margin: 0 5px;
+}
+.footerTop ul {
+    font-size: 14px;
+}
+.footerTop ul li {
+    margin-bottom: 5px;
+}
+
+.footer-copyright {
+    font-size: 12px;
+}
+
+.page-footer img {
+    width: 80%;
+}
+
+
+html,body{
+    font-size:14px;
+}
+
+}
+
+
+
+@media screen and (min-width:1200px) and (max-width:1400px){
+    .hourCircle {
+        margin-top: -170px;
+        margin-bottom: 85px;
+    }
+.tecPricing:before,
+.invenPricing:before,
+.outbPricing:before,
+    .inboPricing:before,
+    .rtrnPricing:before {
+        width: 60px;
+        height: 60px;
+    }
+    .featuHigh {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+    .showFeature .m4 {
+        height:170px;
+    }
+    .fulImgSec {
+        padding: 50px 100px;
+    }
+
+
+    .featureSec {
+        padding: 10px 100px;
+    }
+
+    .servingSec .owl-nav .owl-next {
+        left: 1080px;
+    }
+    .homeBnrContent img {
+        margin-top: -130px;
+        width: 50%;
+    }
+
+    .phoneCon {
+        padding-left: 10px;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    .addCon {
+        padding-left: 10px;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    .mailCon{
+        padding-left: 10px;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+
+
+
+    .visionSec ol {
+        font-size: 14px;
+        line-height: 23px;
+        margin-left: -20px;
+    }
+
+    .aboutBanner img {
+        margin-top: -90px;
+    }
+
+
+    .aboutSec h1 {
+        font-size: 40px;
+    }
+    .outbandUl {
+        margin-top: -30px;
+    }
+    .pricingSec ul p {
+        font-size: 14px;
+    }
+    .featureSec h3 {
+        font-size: 20px;
+    }
+    .featureSec h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .pricingSec h1 {
+        font-size: 40px;
+        margin-top: 60px;
+    }
+    .pricingPara {
+        margin-top: 0px;
+    }
+
+    .pricingSec h3 {
+        font-size: 22px;
+        margin-bottom: -10px;
+    }
+    .weAlso {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .visionSec {
+        padding:0 200px 50px 200px;
+    }
+    .visionImg {
+        width: 90%;
+        margin-top: 19%;
+    }
+    .visionSec p {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: -10px;
+        margin-top: 0;
+    }
+
+    .visionSec p {
+        font-size: 14px;
+        line-height: 26px;
+        margin-bottom: -10px;
+        margin-top: 0;
+    }
+
+
+
+
+
+
+
+
+    .FulfillzyRow h2 {
+        font-size: 35px;
+    }
+
+    .fulImgSec .brainHdng {
+        font-size: 40px !important;
+        margin-bottom: 0px;
+    }
+
+
+        .fulImgSec .brainSubHdng {
+            font-size: 30px !important;
+            margin-bottom: 0px;
+        }
+
+
+
+
+
+
+
+
+.clVisit img{
+    width:70%;
+}
+
+    .pricingSec {
+        padding: 0 50px;
+    }
+
+    .featureBtn, .featureBtn:hover {
+        font-size: 18px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 5px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+
+    .goBigPara {
+        font-size: 20px;
+        line-height: 25px;
+        margin-top: 30px;
+        margin-bottom: -10px;
+    }
+
+
+
+
+
+
+    .homeBnrContent p{
+        font-size:18px;
+    }
+    .clientSec p {
+        font-size: 16px;
+    }
+    .fulfilSec h2+p {
+        font-size: 16px;
+    }
+    .flexSec h3+p {
+        font-size: 16px;
+    }
+    .clVisit h5 {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .mapHow {
+        margin-top: 30px;
+    }
+    .weProvideH3 {
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+    .clVisit {
+        padding:50px 150px 0px 150px;
+    }
+
+    img.threeBoxImg {
+        width: 100%;
+    }
+
+
+
+
+    .footerTop h6 {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+
+
+    .footerTop p{
+        font-size: 12px;
+    }
+    .contactForm button,.contactForm button:hover,
+    .contactForm button:focus,
+    .contactForm button:active {
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        font-size: 14px;
+    }
+    footer .footerTop {
+        padding: 30px 0 0px 0;
+    }
+    .moveTop {
+        height: 40px;
+        width: 40px;
+        margin-top: -40px;
+    }
+    .hide-on-med-and-down {
+        margin-top: 20px;
+    }
+
+    .bnrContact .card {
+        padding: 40px 20px 5px 20px;
+    }
+    .moveTop .fa-chevron-up {
+        font-size: 16px;
+        margin-top: 6px;
+    }
+
+    .getquotePara {
+        margin: 40px 50px 40px 0;
+    }
+    .bnrContact .s7 p {
+        margin-top: 0px;
+        font-size: 14px;
+    }
+.bnrContact img{
+    width:40%;
+}
+.contactForm .form-control {
+
+    height: 40px;
+    line-height: 40px;
+}
+.contactForm .form-select {
+
+    height: 140px;
+    line-height: 140px;
+}
+   header img {
+        width: 60%;
+    }
+    .clientSec {
+        /* margin-top: -700px; */
+    }
+    .lifeSec img{
+        height: auto;
+    width: 70%;
+    }
+
+    .flexSec h1 {
+        font-size: 60px;
+        margin-top: -700px;
+    }
+    .lifeSec h3 {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    .flexSec img {
+        margin-top: 0;
+        width: 60%;
+    }
+    .flexSec h5 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .homeBnrContent {
+        padding:0px 30px 0 120px;
+        height: 700px;
+    }
+    .clientSec .goFlex {
+        margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    }
+    .fulfilSec {
+        padding: 0 140px;
+        margin-top: -410px;
+    }
+
+    .homeBnrContent a, .homeBnrContent a:hover, .homeBnrContent a:active, .homeBnrContent a:focus, .homeBnrContent a:visited {
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 5px;
+        padding: 0 30px;
+        margin-top: 10px;
+    }
+
+    .flexSec h3 {
+        font-size: 26px;
+        margin-top: 70px;
+    }
+    .beflexH2 {
+        margin-bottom: -10px;
+    }
+    .flexSec {
+        padding:100px ​0px 0 ;
+    }
+    .clientSec img {
+        height: auto;
+        margin-left: 0;
+        margin-top: 0%;
+    }
+    .servingSec .card p {
+        font-size: 12px;
+    }
+.homeBnrContent h2{
+    font-size:40px;
+}
+    .servingSec h2 {
+        margin-bottom: 30px;
+        font-size: 40px;
+    }
+    .goFlexP {
+        margin-bottom: -20px;
+    }
+.footerTop .l5 p{
+    font-size:20px;
+}
+    .servingSec {
+        padding: 0 100px;
+        margin-top: -470px;
+    }
+    .socialIcons a {
+        font-size: 20px;
+        margin: 0 5px;
+}
+.footerTop ul {
+    font-size: 14px;
+}
+.footerTop ul li {
+    margin-bottom: 5px;
+}
+
+.footer-copyright {
+    font-size: 12px;
+}
+
+.page-footer img {
+    width: 80%;
+}
+
+
+html,body{
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+}
+@media screen and (min-width:1200px) and (max-width:1300px){
+
+
+    .rockManSec img {
+        margin-top:-80px;
+        width: 35%;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+@media screen and (min-width:1301px) and (max-width:1400px){
+    .homeBnrContent {
+        padding:0 50px 0 200px;
+        /* margin-top: -1450px; */
+    }
+    .rockManSec img {
+        margin-top: 0px;
+        width: 30%;
+        margin-bottom: 10px;
+    }
+
+
+    .rockManSec img {
+        margin-top: -90px;
+        width: 35%;
+    }
+
+
+
+
+
+
+
+
+
+}
+@media screen and (min-width:1401px) and (max-width:1500px){
+    .homeBnrContent {
+        padding:0 50px 0 150px;
+        height: 750px;
+    }
+    .lifeSec {
+        height: auto;
+        padding: 30px 0;
+    }
+    .lifeSec .entrepreneur {
+        margin-bottom: 40px;
+    }
+}
+@media screen and (min-width:1501px) and (max-width:1600px){
+    .homeBnrContent {
+        padding: 0 50px 0 200px;
+        height: 750px;
+    }
+}
+
+@media screen and (min-width:1401px) and (max-width:1600px){
+
+
+
+
+    .visionSec {
+        padding: 0 300px 50px 200px;
+    }
+
+
+
+
+
+
+
+
+    .fulImgSec {
+        padding: 40px 200px;
+    }
+
+
+    .servingSec .owl-nav .owl-next {
+        left: 1210px;
+    }
+
+
+
+
+
+    .featuHigh {
+
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+    .homeBnrContent img {
+        margin-top: -150px;
+        width: 50%;
+    }
+    .showFeature .m4 {
+        height: 180px;
+    }
+
+    .featureSec h1 {
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+    .featureSec h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .featureSec {
+        padding: 10px 80px;
+        margin-top: 15%;
+    }
+
+
+    .featureSec h3 {
+        font-size: 20px;
+    }
+
+
+
+
+
+
+    .clientBgSec img {
+        margin-top: -680px;
+    }
+
+    .goBigPara {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 30px;
+        margin-bottom: -20px;
+    }
+
+
+    .contactForm .form-control {
+        height: 50px;
+        line-height: 50px;
+    }
+
+
+    .visionImg {
+        width: 80%;
+        margin-top: 19%;
+        margin-left: 20%;
+    }
+
+    .contactForm button {
+        height: 50px;
+        line-height: 50px;
+    }
+
+
+
+
+
+
+    footer .footerTop {
+        padding: 30px 0 0px 0;
+    }
+
+    .socialIcons a {
+        font-size: 26px;
+        margin: 0 7px;
+    }
+
+    .mapHow {
+        margin-top: 20px;
+    }
+
+    .aboutSec h1 {
+        font-size: 40px;
+    }
+
+    .aboutBanner img {
+        margin-top: -90px;
+    }
+
+    .visionSec p {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: -10px;
+        margin-top: 0px;
+    }
+    .visionSec ol {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .weProvideH3 {
+        margin-top: 60px;
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+    .pricingSec {
+        padding: 0 100px;
+    }
+    .FulfillzyRow .brainSubHdng {
+        font-size: 36px;
+    }
+    .weAlso {
+        font-size: 23px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .fulImgSec .brainHdng {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+
+
+
+
+
+
+
+
+    .featureSec p {
+        font-size: 15px;
+    }
+    .featureSec {
+        padding: 10px 150px;
+        margin-top: 0%;
+    }
+
+    .featureSec h3 {
+        font-size: 22px;
+    }
+    .goBig {
+        font-size: 40px;
+        margin-top: 0px;
+    }
+
+
+    .featureSec h1 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+
+    .pricingPara {
+        margin-top: 0px;
+    }
+    .featureBtn, .featureBtn:hover {
+        font-size: 18px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .pricingSec h3 {
+        font-size: 20px;
+        margin-bottom: -10px;
+    }
+
+    .pricingSec h1 {
+        font-size: 40px;
+        margin-top: 60px;
+    }
+
+    .goBigPara {
+        font-size: 21px;
+        line-height: 28px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .homeBnrContent h2 {
+        font-size: 40px;
+    }
+    .lifeSec img {
+        height: auto;
+    }
+
+    .flexSec img {
+        margin-top: 0;
+        width: 60%;
+    }
+
+    .flexSec {
+        padding: 30px ​100px;
+    }
+
+
+
+    .homeBnrContent p{
+        font-size:18px;
+    }
+    .flexSec h3+p {
+        font-size: 16px;
+    }
+
+    .flexSec h3 {
+        font-size: 26px;
+        margin-top: 110px;
+    }
+    .clientSec p {
+        font-size: 22px;
+    }
+    .fulfilSec h2+p {
+        font-size: 20px;
+    }
+    .clVisit h5 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .clVisit {
+        padding: 50px 150px 60px 150px;
+    }
+
+
+
+
+
+
+
+
+.flexSec h5{
+  line-height: 35px;
+}
+.footerTop p{
+    font-size:12px;
+}
+    .goFlexP {
+        margin-bottom: -20px;
+    }
+
+
+    .footerTop img {
+        width: 70%;
+    }
+
+    .footerTop ul {
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+    .servingSec h2 {
+        margin-bottom: 30px;
+        font-size: 50px;
+    }
+header img{
+    width: 70%;
+}
+
+    .flexSec h1 {
+        font-size: 80px;
+        margin-top: -830px;
+    }
+    .hide-on-med-and-down {
+        margin-top: 20px;
+    }
+
+
+    .clientSec {
+        margin-top:0px;
+    }
+
+    .clientSec .goFlex {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 60px;
+    }
+    .clientSec img {
+        margin-top: 3%;
+        height: auto;
+        width: 100%;
+    }
+    .fulfilSec {
+        margin-top: -520px;
+    }
+.fulfilSec img{
+    width:100%;
+}
+
+.footerTop .l5 p{
+    font-size:20px;
+}
+
+.footer-copyright {
+    font-size: 13px;
+}
+
+
+
+    .homeBnrContent a,
+    .homeBnrContent a:hover,
+    .homeBnrContent a:active,
+     .homeBnrContent a:focus,
+     .homeBnrContent a:visited {
+        font-size: 16px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 8px;
+        padding: 0 40px;
+        margin-top: 20px;
+    }
+.lifeSec h3{
+    margin-bottom:30px;
+    font-size: 40px;
+}
+
+    .rockManSec img {
+        margin-top: -100px;
+        width: 30%;
+        margin-bottom: 50px;
+    }
+   /* .lifeSec img {
+        width: 90%;
+    } */
+
+    .beflexH2 {
+        margin-bottom: -10px;
+    }
+    .bnrHome img {
+        margin-top: -100px;
+    }
+
+    .servingSec {
+        padding: 0 120px;
+        margin-top: -540px;
+    }
+    html,body{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:1601px) and (max-width:1700px){
+    .homeBnrContent {
+        padding:0 50px 10px 200px;
+        /* margin-top: -1840px; */
+    }
+}
+@media screen and (min-width:1701px) and (max-width:1800px){
+    .homeBnrContent {
+        padding:0 50px 10px 200px;
+        /* margin-top: -1940px; */
+    }
+}
+
+@media screen and (min-width:1601px) and (max-width:1800px){
+
+
+
+
+    .servingSec .owl-nav .owl-next {
+        left: 1240px !important;
+      position: absolute;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .clVisit {
+        padding: 50px 300px 0px 300px;
+    }
+    .showFeature .m4 {
+        height: 240px;
+        overflow: auto;
+    }
+    .weProvideH3 {
+        margin-top: 60px;
+        margin-bottom: 30px;
+        font-size: 45px;
+    }
+    .homeBnrContent img {
+        margin-top: -60px;
+        width: 45%;
+    }
+
+    .mapHow {
+        margin-top: 80px;
+    }
+.fulfilSec img{
+    width:100%;
+}
+
+
+.lifeSec {
+    height: auto;
+    padding: 10px 0 20px 0;
+}
+
+
+
+
+
+
+    .weAlso {
+        font-size: 25px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .FulfillzyRow h2 {
+        font-size: 40px;
+    }
+    .fulImgSec h2 {
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    .pricingSec h1 {
+        font-size: 45px;
+        margin-top: 70px;
+    }
+
+    .pricingPara {
+        margin-top: 20px;
+    }
+
+
+    .pricingSec h3 {
+        font-size: 25px;
+        margin-bottom: -10px;
+    }
+
+    .pricingSec ul p {
+        font-size: 15px;
+    }
+
+
+
+    .clientBgSec img {
+
+        margin-top: -250px;
+    }
+.logo{
+    width:80%;
+}
+.featureSec {
+    margin-top: 5%;
+}
+.beflexH2 {
+    margin-bottom: -10px;
+}
+.goBigPara {
+    font-size: 25px;
+    line-height: 35px;
+    margin-top: 30px;
+    margin-bottom: -15px;
+}
+.featureSec h3 {
+    font-size: 26px;
+}
+.bnrHome img {
+    margin-top: -100px;
+}
+
+.flexSec img {
+    margin-top: 0;
+    width: 50%;
+}
+
+.flexSec h3 {
+    font-size: 35px;
+    margin-top: 70px;
+}
+.featureSec h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+
+    .homeBnrContent p{
+        font-size:23px;
+    }
+    .clVisit h5 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .fulfilSec h2+p {
+        font-size: 21px;
+    }
+    .clientSec .goFlex {
+        font-size: 65px;
+    }
+    .lifeSec img {
+        height: auto;
+    }
+    .clientSec p {
+        font-size: 22px;
+    }
+    .clientSec img {
+        height: auto;
+    margin-top: 0%;
+    width: 100%;
+    }
+    .flexSec h3+p {
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+    .homeBnrContent a, .homeBnrContent a:hover, .homeBnrContent a:active, .homeBnrContent a:focus, .homeBnrContent a:visited {
+        font-size: 22px;
+        height: 60px;
+        line-height: 60px;
+    }
+html,body{
+    font-size: 18px;
+}
+    .homeBnrContent h2 {
+        font-size: 55px;
+    }
+
+    .fulfilSec {
+        margin-top: -610px;
+    }
+
+    .lifeSec h3{
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+
+    .flexSec h5 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+
+
+
+
+    .rockManSec img {
+        margin-top: -140px;
+        width: 40%;
+        margin-bottom: 60px;
+    }
+    .clientSec {
+        margin-top:0;
+    }
+.clientSec h3{
+    font-size:50px;
+}
+.servingSec h2 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.flexSec h1 {
+    font-size: 60px;
+    margin-top: -900px;
+}
+.aboutSec h1 {
+    font-size: 45px;
+}
+
+
+
+
+
+}
+
+
